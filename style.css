@@ -1,0 +1,403 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body{
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    color: white;
+}
+.btn-container {
+    margin-top: 15px;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+} 
+nav {
+    margin-top: 20px;
+    box-shadow: 3px 3px 3px gray;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: black;
+}
+nav .container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .container .logo {
+    color: rgb(255, 122, 13);
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 80px;
+}
+nav .container .search {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+}
+nav .container .search input {
+    width: 90%;
+    padding: 6px 10px;
+    border-radius: 6px 0px 0px 6px;
+    border: none;
+}
+nav .container .search  i {
+    padding: 7px;
+    background-color: white;
+    color: black;
+    border-radius: 0px 6px 6px 0px;
+}
+nav .container .info-top {
+    padding: 10px 20px;
+    display: flex;
+    gap: 40px;
+    font-size: 22px;
+}
+nav .container .info-top i {
+    padding: 8px 12px;
+    border: 2px solid transparent;
+}
+nav .container .info-top i:hover {
+    border: 2px solid rgb(255, 122, 13);
+    transition: 0.1s ease-in-out;
+}
+
+/* Main section */
+
+main .container {
+    margin-top: 50px;
+}
+main .container .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+} 
+main .container .hero .main-info {
+    max-width: 400px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+main .container .hero .main-info h1 {
+    font-size: 52px;
+    line-height: 55px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px gray;
+    opacity: 0.7;
+}
+main .container .hero .main-info p {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+} 
+main .container .hero .main-info button {
+    background-color: rgb(201, 54, 17);
+    border: none;
+    padding: 10px 10px;
+    color: white;
+    font-weight: 600;
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+main .container .hero .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main .container .hero .img-container img {
+    height: 320px;
+}
+
+/* SECTION 1 */
+section {
+    margin-top: 50px;
+    text-align: center;
+    display: grid;
+}
+section h1 {
+    font-size: 52px;
+    font-weight: 500;
+    
+}
+section h1 span {
+    color: rgb(201, 54, 17);
+}
+
+section .sec1 {
+    width: 1100px;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 15px;
+    place-items: center;
+    
+    /* padding: 10px; */
+}
+section .food {
+    padding: 8px;
+    background-color: white;
+    color: black;
+    text-align: justify;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px gray;
+    margin-bottom: 30px;
+}
+section .food:hover {
+    transform: scale(1.02);
+    transition: 0.6s ease-in-out;
+}
+section .sec1 .food .img {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+section .sec1 .img img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+section .sec1 .food h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 65px;
+}
+section .sec1 .food p {
+    line-height: 20px;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    line-height: 25px;
+}
+section .sec1 .food .btn-container {
+    margin-top: 15px;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+} 
+section .sec1 .food .btn-container button {
+    padding: 6px 12px;
+    background-color: rgb(201, 54, 17);
+    color: white;
+    border: none;
+
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 8px;
+}
+
+
+section .customer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section .customer .cust-info  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section .customer .cust-info .cust-img img{
+    width: 200px;
+    background-color: black;
+    border-radius: 50%;
+}
+section .customer .cust-info .stars {
+    color: orangered;
+    font-size: 28px;
+}
+section .customer .cust-info  p {
+    color: black;
+}
+section  .cust-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder;
+
+}
+section  .cust-btn button {
+    padding: 5px 32px;
+    background-color: orangered;
+    border: none;
+    font-weight: bolder;
+    color: white;
+    border-radius: 6px;
+
+}
+section  .cust-btn button:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease-in;
+}
+
+
+footer {
+    background-color: white;
+    color: black;
+}
+footer .footer-container {
+    max-width: 1000px;
+    margin: 20px  auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 80px;
+}
+footer .footer-container a {
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+footer .footer-container .box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1224px) {
+    nav {
+        width: 100%;
+    }
+    nav .container {
+        width: 100%;
+    }
+    nav .container .logo {
+        font-size: 25px;
+    }
+    nav .container .search {
+        width: 400px;
+    }
+    nav .container .info-top {
+        padding: 4px 8px;
+        gap: 5px;
+    }
+
+}
+
+@media (max-width: 580px) {
+    nav .container .logo {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    nav .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav .container .logo {
+        margin-left: 10px;
+        font-size: 32px;
+    }
+    nav .container .search {
+        max-width: 90%;
+    }
+
+}
+
+
+@media (max-width:955px){
+    main .container .img-container img {
+         /* width: 300px; */
+        height: 200px; 
+    }
+}
+
+@media (max-width:686px) {
+    main .container .hero {
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+        width: 100%;
+        gap: 10px;
+        
+    }
+    main .container .hero .main-info {
+        text-align: center;
+        margin-right: 80px;
+        padding: 20px;
+        
+    }
+    main .container .hero .main-info h1{
+        font-size: 35px;
+    }
+    main .container .hero .main-info .btn-container {
+        margin-right: 120px;
+    }
+    main .container .hero .main-info button {
+        margin-left: 120px;
+        padding: 10px;
+    }
+    main .container .hero .img-container img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+
+/* Main Section */
+@media (max-width: 1105px) {
+    section .sec1 {
+        width: 100%;
+        margin:  auto;
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+        grid-template-rows: repeat(6, 600px);
+        grid-gap: 25px;
+        place-items:center;
+        background-color: red;
+        
+        
+        /* padding: 10px; */
+    }
+    section .food {
+        padding: 8px;
+        background-color: white;
+        color: black;
+        text-align: justify;
+        border-radius: 8px;
+        box-shadow: 2px 2px 2px gray;
+        width: 100%;
+        margin: auto;
+
+    }
+    section .sec1 .food .img img {
+
+        height: 300px;
+    }
+}
